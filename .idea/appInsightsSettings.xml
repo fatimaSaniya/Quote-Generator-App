@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.quotegenerator" />
+                  <option name="mobileSdkAppId" value="1:547808304170:android:ed6891c5a19b707e2d7753" />
+                  <option name="projectId" value="quote-generator-fddd3" />
+                  <option name="projectNumber" value="547808304170" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

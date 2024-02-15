@@ -12,24 +12,21 @@ import androidx.compose.ui.platform.LocalContext
 import com.example.quotegenerator.ui.screen.QuoteScreen
 import com.example.quotegenerator.ui.theme.QuoteGeneratorTheme
 import com.example.quotegenerator.ui.theme.QuoteViewModel
+import com.google.firebase.FirebaseApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        FirebaseApp.initializeApp(this) // Ensure ,Firebase is initialized here
         setContent {
             QuoteGeneratorTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
+                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     val viewModel by viewModels<QuoteViewModel>()
                     val context = LocalContext.current
-                    MaterialTheme {
-                        QuoteScreen(viewModel = QuoteViewModel(), context = context )
-                    }
+                    QuoteScreen(viewModel = viewModel, context = context)
                 }
             }
         }
     }
 }
+

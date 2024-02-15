@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "547808304170",
+    "project_id": "quote-generator-fddd3",
+    "storage_bucket": "quote-generator-fddd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547808304170:android:ed6891c5a19b707e2d7753",
+        "android_client_info": {
+          "package_name": "com.example.quotegenerator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpQG8-pxjbjfHolHqdzBN-1Sf2paClvFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
